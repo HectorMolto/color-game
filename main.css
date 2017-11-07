@@ -1,0 +1,27 @@
+
+body {
+  background-color: #232323;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.square {
+  width: 30%;
+  padding-bottom: 30%;
+  background-color: purple;
+  margin: 1.66%;
+}
+
+.hidden {
+  visibility: hidden;
+}
