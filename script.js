@@ -35,13 +35,16 @@ function pickRandomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
-function fillColors() {
+function showHiddenSquares() {
   for (let i = 0; i < modeGame; i += 1) {
     squares[i].classList.remove('hidden');
-    squares[i].style.backgroundColor = colors[i];
-    if (modeGame === 3) {
+  }
+}
 
-    }
+function fillColors() {
+  for (let i = 0; i < modeGame; i += 1) {
+    showHiddenSquares();
+    squares[i].style.backgroundColor = colors[i];
   }
 }
 
@@ -51,6 +54,7 @@ function winningSquare() {
     h1.style.backgroundColor = pickedColor;
     result.style.color = pickedColor;
   }
+  showHiddenSquares();
 }
 
 function addClickColor() {
