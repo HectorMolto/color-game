@@ -2,12 +2,23 @@
 <html>
 <head>
   <title>RGB Guessing Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <body>
 
   <h1>The Great <br><span id="colorDisplay">RGB</span><br> Color Game</h1>
+  <div class="header">
+    <div class="controls">
+      <span id="reset">New Game</span>
+      <span id="result"></span>
+      <div class="modeButtons">
+        <span class="mode" id="easy">Easy</span>
+        <span class="mode selected" id="hard">Hard</span>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="square"></div>

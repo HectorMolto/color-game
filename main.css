@@ -1,14 +1,64 @@
 
 body {
   background-color: #232323;
+  margin: 0;
+  font-family: Source Sans Pro, sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
   color: white;
   text-align: center;
+  background-color: steelblue;
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 20px 0;
+  font-size: 26px;
+}
+
+#colorDisplay {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  }
+
+.header {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.selected {
+  background-color: steelblue;
+  color: white;
+}
+
+.mode {
+  padding: 5px 5px;
+}
+
+.modeButtons {
+  margin-right: 1.66%;
+}
+
+#reset {
+  margin-left: 1.66%;
+}
+
+#result {
+  color: firebrick;
 }
 
 .container {
+  padding-top: 1.66%;
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
@@ -20,6 +70,7 @@ h1 {
   padding-bottom: 30%;
   background-color: purple;
   margin: 1.66%;
+  border-radius: 12.5%;
 }
 
 .hidden {
